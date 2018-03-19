@@ -1,0 +1,24 @@
+Bagging is a special case of random forests under which case?
+Bagging is a special case of random forests when trees in the ensemble tend to be correlated and have similarity.
+
+
+What are the hyperparameters we can control for random forests?
+when making a new stump to grow a tree, we choose one predictor out of the total p predictors. 
+In randon forests, we random subset of m predictors out of the p. 
+A new batch of m predictors is selected each time a stump is to be made.
+
+Suppose you have the following paired data of (x,y): (1,2), (1,5), (2,0). Which of the following are valid bootstrapped data sets? Why/why not?
+(1,0), (1,2), (1,5) not valid bootstrapped data sets
+(1,2), (2,0)valid bootstrapped data sets
+(1,2), (1,2), (1,5)valid bootstrapped data sets
+
+For each of the above valid bootstapped data sets, which observations are out-of-bag (OOB)?
+For dataset (1,2), (2,0), OOB is (1,5) because (1,5) is not presented in the original dataset
+For dataset (1,2), (1,2), (1,5), OOB is (2,0) because (2,0) is not presented in the original dataset
+
+
+You make a random forest consisting of four trees. You obtain a new observation of predictors, and would like to predict the response. What would your prediction be in the following cases?
+Regression: your trees make the following four predictions: 1,1,3,3.
+prediction: (1+1+3+3)/4 = 2
+Classification: your trees make the following four predictions: “A”, “A”, “B”, “C”.
+prediction: A. For categorical variables, A appears the most.
