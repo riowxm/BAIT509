@@ -3,14 +3,15 @@ Bagging is a special case of random forests when trees in the ensemble tend to b
 
 
 What are the hyperparameters we can control for random forests?
+when n=p
 when making a new stump to grow a tree, we choose one predictor out of the total p predictors. 
 In randon forests, we random subset of m predictors out of the p. 
 A new batch of m predictors is selected each time a stump is to be made.
 
 Suppose you have the following paired data of (x,y): (1,2), (1,5), (2,0). Which of the following are valid bootstrapped data sets? Why/why not?
 (1,0), (1,2), (1,5) not valid bootstrapped data sets
-(1,2), (2,0)valid bootstrapped data sets
-(1,2), (1,2), (1,5)valid bootstrapped data sets
+(1,2), (2,0)not valid bootstrapped data sets because it has to be the same length as the original data.
+(1,2), (1,2), (1,5)valid bootstrapped data sets. it has 3 elements and it's random draw from the original data
 
 For each of the above valid bootstapped data sets, which observations are out-of-bag (OOB)?
 For dataset (1,2), (2,0), OOB is (1,5) because (1,5) is not presented in the original dataset
