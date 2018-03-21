@@ -1,0 +1,20 @@
+1. 
+Both A and B have same productivity score. However, B has more variance than A. 
+For A: Lower variance, lower bias
+For B: Higher variance, higher bias
+Therefore, I will choose A (smaller variance) with higher probability to get productivity score of 75.
+
+2.
+For A: mean = 60, lower variance
+For B: mean = 80, higher variance
+
+There is a bias-variance tradeoff. 
+A is with lower productivity score but lesser bias, B is with higher productivity score but higher bias.
+I'll choose B this time because I value productivity more than biase. 
+The tradeoff is that if I choose to value more on productivity score, then I have to bear any risks and variability.
+
+3. 
+
+There is no problem with the probablistic forecasting because the test data are within probalistic forecasting distribution.
+However, I concern that all my test data are located right from mean. 
+This indicate that my forecasting distribution is biased and can't fit my test data very well.
