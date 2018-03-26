@@ -1,0 +1,24 @@
+1.Construct the decision rule according to this classification boundary. How would you classify a new observation that has x1=6 and x2=10?
+The classification boundary is x1=7.5; when x1<7.5, data are classified as A, and when x1>7.5, data are classified as B.
+The margin boundary is x1=5.5 and x1=9.5. The new observation (x1=6, x2=10) will belong to claasification A.
+
+2. What size is the margin here?
+The margin size = 2
+
+3. Which observations receive a penalty? Which observations are the support vectors?
+A:6,7,9,10
+B:8
+
+4. What is the total penalty here?
+Total penalty are point 6,7,8, and 9
+A: 0.25+0.25+1.75+2.25 +1.25 =5.75
+
+
+5. Can I choose a bigger margin if my total allowable penalty is 6?
+Yes. If we increase the allwable penalty from 5.75 to 6, the the total panelty will decrease because we allow more penalty now. 
+
+
+
+6. Are the data separable? If so, what are the support vectors?
+the data is separable because we can set boundarys to seperate into two classification (in any direction). we can seperate the data in between line pass point 4, and 9, and another line parall with that line
+The support vectors is point 4,8,9
